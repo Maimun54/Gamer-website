@@ -1,0 +1,77 @@
+/* header style start */
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+.Duel-color{
+    color: #FF42A5;
+}
+p.logo-text {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-left: 0.4rem;
+}
+
+img.logo {
+    display: flex;
+    align-items: center;}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.menu-area ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu-area ul li {
+    list-style: none;
+    margin: 29px;
+}
+
+img.logo {
+    width: 80px;
+    height: 40px;
+}
+
+.menu-area ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.menu-area ul li a.fa-brands{
+    color: red;
+}
+.y-icon {
+    color: red;
+}
+button.menu-btn {
+    height: 61px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 19px;
+}
+button.menu-btn a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+
+/* Mobile responsive start */
+@media screen and (max-width:576px) {
+    nav, .menu-area ul {
+       flex-direction: column;
+    }
+    
+}
+
+/* Tablet responsive start */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    
+}
