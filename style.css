@@ -210,24 +210,12 @@ h1.instant-title {
     margin-left: -108px;
 }
 /* actin style */
+
 .actin-box {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 25px;
-}
-.action-box-one {
-    display: flex;
-    align-items: center;
-    gap: 104px;
-    margin-bottom: 32px;
-}
-
-.box-part-two {
-    display: flex;
-    align-items: center;
-    gap: 66px;
-    margin: 0 118px;
 }
 
 .action-container {
@@ -253,7 +241,7 @@ div#box-side {
     display: flex;
     align-items: center;
 }
-.items {
+.items ul{
     display: flex;
     list-style: none;
     gap: 30px;
