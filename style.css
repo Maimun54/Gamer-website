@@ -176,26 +176,30 @@ p.games-box-title {
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
-.tryit{
+/* .tryit{
     display:none;
-}
+} */
 .hover-icon {
     font-size: 33px;
     position: relative;
     bottom: 278px;
     margin-left: 90px;
-    /* display: none; */
+    display: none;
     color: #fff;
 }
-.games-box img:hover{
+.games-box img:hover {
     border: 5px solid #FF42A5;
     border-radius: 16px;
-    
+    display:block;
+    color: red;
     
 }
-.games-box img:hover + .tryit{
-    display: block;
+.hover-icon:hover {
+         display: block;
 }
+
+
+
 /* play instantly style */
 
 .play-instantly-container {
@@ -248,19 +252,20 @@ div#box-side {
 }
 
 .actin-box img {
-    width: 60px;
-    height: 60px;
+    width: 35px;
+    height: 35px;
 }
-/* .actin-box :hover {
-    width: 248px;
-    height: 80px;
-    border: 2px solid red;
+.actin-box:hover {
+    border: 1px solid black;
     border-radius: 50px;
-    background: red;
-} */
+    background: #FFF;
+}
+
 /* Footer style */
 footer{
     background: #0B0223;
+    margin: 0px;
+    padding: 0px;
 }
 .footer-logo {
     display: flex;
@@ -418,10 +423,26 @@ ul.privacy li {
     .instant-over-images img{
         margin-left: -53px;
     }
-    .action-container{
+    .action-container,.items ul{
         grid-template-columns: repeat(3,1fr);
+    }
+    .privacy{
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 20px;
     }
     div#box-side{
         margin-right: 0px;
+    }
+    .footer-logo {
+      margin-left: 183px;  
+    }
+    .items ul {  
+        margin-left: 18px;
+    }
+    .icon-item{
+        margin-left: 230px;
+    }
+    p.footer-text{
+        margin-left: 85px;
     }
 }
