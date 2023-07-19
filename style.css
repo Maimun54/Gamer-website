@@ -65,9 +65,7 @@ button.menu-btn a {
     font-size: 1.2rem;
 }
 /* banner area start */
-/* .banner-container{
-    background-image: url("images/Group\ 14.png");
-} */
+
 .banner-area {
     width: 80%;
     margin: 0 auto;
@@ -178,6 +176,26 @@ p.games-box-title {
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
+.tryit{
+    display:none;
+}
+.hover-icon {
+    font-size: 33px;
+    position: relative;
+    bottom: 278px;
+    margin-left: 90px;
+    /* display: none; */
+    color: #fff;
+}
+.games-box img:hover{
+    border: 5px solid #FF42A5;
+    border-radius: 16px;
+    
+    
+}
+.games-box img:hover + .tryit{
+    display: block;
+}
 /* play instantly style */
 
 .play-instantly-container {
@@ -233,7 +251,13 @@ div#box-side {
     width: 60px;
     height: 60px;
 }
-
+/* .actin-box :hover {
+    width: 248px;
+    height: 80px;
+    border: 2px solid red;
+    border-radius: 50px;
+    background: red;
+} */
 /* Footer style */
 footer{
     background: #0B0223;
