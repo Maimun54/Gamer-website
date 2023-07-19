@@ -1,4 +1,10 @@
-/* header style start */
+*{
+    h3{
+        margin: 0px;
+        padding: 0px;
+    }
+}
+/* nav style start */
 .logo-area {
     display: flex;
     align-items: center;
@@ -60,18 +66,174 @@ button.menu-btn a {
     text-decoration: none;
     font-size: 1.2rem;
 }
+/* banner area start */
+/* .banner-container{
+    background-image: url("images/Group\ 14.png");
+} */
+.banner-area {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
 
+.banner-info {
+    width: 50%;
+    /* background-image: url("images/Group\ 14.png"); */
+}
+
+.banner-image {
+    width: 50%;
+}
+.banner-image img {
+    width: 100%;
+}
+.b-info-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #0B0223;
+    margin-bottom: -48px;
+}
+
+.b-info-title-two {
+    font-size: 5.5rem;
+    font-weight: 800;
+    margin-bottom: 0px;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.b-info-text {
+    font-size: 20px;
+    font-weight: 500;
+    color: #534C64;
+}
+.banner-info-button {
+    display: flex;
+    gap: 30px;
+}
+.banner-btn {
+    color: #fff;
+    border-radius: 48px;
+    background: #FF42A5;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    border: none;
+}
+.banner-btn-two{
+    color: #fff;
+    border-radius: 48px;
+    background: #4EC5F7;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    border: none;
+}
+
+/* online games */
+h1.online-title {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+p.online-description {
+    color: #534C64;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+}
+.title-color{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.games-box {
+    
+    margin-right: 29px;
+    
+}
+
+.games-box img {
+    width: 270px;
+    height: 318px;
+}
+
+p.games-box-title {
+    font-size: 1.3rem;
+    color: #534C64;
+    font-weight: 500;
+    margin-top: 7px;
+}
+.online-games-container {
+   
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
 
 /* Mobile responsive start */
 @media screen and (max-width:576px) {
-    nav, .menu-area ul {
+    nav, .menu-area ul, .online-games-container {
        flex-direction: column;
     }
+    .online-games-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .banner-area{
+        flex-direction: column-reverse;
+    }
+    .banner-info {
+        width: 100%;
+       
+    }
     
+    .banner-image {
+        width: 100%;
+    }
+    .banner-btn, .banner-btn-two {
+        font-size: 14px;
+    }
+    h1.online-title{
+        font-size: 2rem;
+    }
+    p.online-description{
+        font-size: 1rem;
+    }
+    .b-info-title-two{
+        font-size: 5rem;
+    }
+    .games-box {
+        height:auto;
+        width: auto;
+    }
 }
 
 /* Tablet responsive start */
 
 @media screen and (min-width:576px) and (max-width:992px) {
-    
+    .banner-area{
+        flex-direction: column-reverse;
+    }
+    .b-info-title-two{
+        font-size: 5rem;
+    }
+    .banner-info {
+        width: 100%;  
+    }
+    .banner-image {
+        width: 100%;
+    }
+    .online-games-container{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
