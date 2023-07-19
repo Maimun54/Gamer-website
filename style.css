@@ -1,8 +1,6 @@
-*{
-    h3{
-        margin: 0px;
-        padding: 0px;
-    }
+
+section{
+    margin-top: 60px;
 }
 /* nav style start */
 .logo-area {
@@ -180,10 +178,41 @@ p.games-box-title {
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
+/* play instantly style */
+
+.play-instantly-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+h1.instant-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #0B0223;
+}
+.play-instant-info {
+    width: 50%;
+    text-align: center;
+}
+
+.play-instant-image {
+    width: 50%;
+}
+.play-instant-image img {
+    width: 85%;
+}
+.instant-over-images img {
+    width: 220px;
+    height: 250px;
+    position: relative;
+    margin-top: -135px;
+    margin-left: -108px;
+}
 
 /* Mobile responsive start */
 @media screen and (max-width:576px) {
-    nav, .menu-area ul, .online-games-container {
+    nav, .menu-area ul, .online-games-container, .play-instantly-container {
        flex-direction: column;
     }
     .online-games-container{
@@ -192,14 +221,9 @@ p.games-box-title {
     .banner-area{
         flex-direction: column-reverse;
     }
-    .banner-info {
-        width: 100%;
-       
-    }
-    
-    .banner-image {
-        width: 100%;
-    }
+    .banner-info, .banner-image, .play-instant-info, .play-instant-image {
+        width: 100%;     
+    }  
     .banner-btn, .banner-btn-two {
         font-size: 14px;
     }
@@ -216,6 +240,14 @@ p.games-box-title {
         height:auto;
         width: auto;
     }
+    .play-instant-image img {
+        margin-left: 45px;
+    }
+    .instant-over-images img{
+        margin-left: -41px;
+        width: 50%;
+        height: 50%;
+    }
 }
 
 /* Tablet responsive start */
@@ -227,13 +259,21 @@ p.games-box-title {
     .b-info-title-two{
         font-size: 5rem;
     }
-    .banner-info {
+    .banner-info,.banner-image,.play-instant-info,.play-instant-image {
         width: 100%;  
     }
-    .banner-image {
-        width: 100%;
+    .play-instantly-container{
+        flex-direction: column;
     }
+    
     .online-games-container{
         grid-template-columns: repeat(2,1fr);
+    }
+    .play-instant-image img {
+        margin-left: 45px;
+
+    }
+    .instant-over-images img{
+        margin-left: -53px;
     }
 }
