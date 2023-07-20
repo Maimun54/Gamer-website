@@ -152,8 +152,11 @@ p.online-description {
 }
 .games-box {
     
-    margin-right: 29px;
+margin-right: 29px;
     
+width: 270px;
+    
+height: 384px;
 }
 
 .games-box img {
@@ -176,27 +179,46 @@ p.games-box-title {
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
-/* .tryit{
-    display:none;
-} */
+
+.hover-icon .watch-now {
+    font-size: 29px;
+    color: #fff;
+    margin-left: -92px;
+}
+.hover-icon .icos {
+    font-size: 30px;
+    color: gray;
+    margin-left: -120px;
+}
 .hover-icon {
-    font-size: 33px;
+    position: relative;
+    top: -298px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+}
+
+/* .hover-icon {
+
+    /* font-size: 33px;
     position: relative;
     bottom: 278px;
     margin-left: 90px;
     display: none;
-    color: #fff;
-}
+    color: #fff; */
+ */
 .games-box img:hover {
     border: 5px solid #FF42A5;
-    border-radius: 16px;
-    display:block;
-    color: red;
-    
+    border-radius: 16px;  
 }
 .hover-icon:hover {
-         display: block;
+    opacity: 1;
+    margin-left: 112px;
 }
+
 
 
 
@@ -350,6 +372,7 @@ ul.privacy li {
     .games-box {
         height:auto;
         width: auto;
+        margin-bottom: -100px;
     }
     .play-instant-image img {
         margin-left: 45px;
