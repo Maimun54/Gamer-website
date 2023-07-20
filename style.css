@@ -181,13 +181,13 @@ p.games-box-title {
 }
 
 .hover-icon .watch-now {
-    font-size: 29px;
+    font-size: 35px;
     color: #fff;
     margin-left: -92px;
 }
 .hover-icon .icos {
-    font-size: 30px;
-    color: gray;
+    font-size: 45px;
+    color: #fff;
     margin-left: -120px;
 }
 .hover-icon {
@@ -201,19 +201,11 @@ p.games-box-title {
     opacity: 0;
 }
 
-/* .hover-icon {
 
-    /* font-size: 33px;
-    position: relative;
-    bottom: 278px;
-    margin-left: 90px;
-    display: none;
-    color: #fff; */
- */
-.games-box img:hover {
+/* .games-box img:hover {
     border: 5px solid #FF42A5;
     border-radius: 16px;  
-}
+} */
 .hover-icon:hover {
     opacity: 1;
     margin-left: 112px;
